@@ -64,4 +64,10 @@
     [CATransaction commit];
 }
 
+- (void)setEmptyColor:(UIColor *)emptyColor
+{
+    _emptyColor = emptyColor;
+    _indicatorLayer.backgroundColor = emptyColor.CGColor;
+}
+
 @end
